@@ -1,0 +1,27 @@
+<%- include('partials/header') -%>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <h1 class="text-justify">Feed</h1>
+      <ul class="col-5 mt-2 list-group-item list-unstyled">
+        <% for(var i=0; i<posts.length; i++) {%>
+          <li class="row-3 justify-content-between mt-0 text-center">
+            <span class="badge badge-dark" style="color: black">Likes: <%= posts[i].likes %></span>
+            <a href="/profile/<%= posts[i].user._id%>"><p><strong>User: </strong><%= posts[i].user.userName%></p>
+            </a>
+            <a href="/post/<%= posts[i]._id%>" class="list-group-item list-group-item-action"/>
+              <p><strong>Title: </strong><%= posts[i].title %></p>
+              <audio
+              controls
+              src="<%= posts[i].image%>" />
+                  <a href="/post/<%= posts[i].image%>" />
+                  </a>
+          </audio>  
+        </li>
+          <% } %></a>
+      
+    </div>
+    <div class="col-6 mb-3">
+      <a class="btn btn-danger" href="/profile/<%= user._id%>">Return to Profile</a>
+    </div>
+  </div>  
+<%- include('partials/footer') -%>
