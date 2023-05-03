@@ -1,4 +1,4 @@
-#Feedbacko
+## Feedbacko
 
 ---
 
@@ -10,16 +10,16 @@ Feedbacko is a full-stack web application focused on feedback. Users can give an
 
 Users can post their beats/songs by going to their profile. They can also see all of their posts listed on there.
 
-![profile.png](/imgs/profile.png)
+![profile.png](public/imgs/profile.png)
 ---
 
 The feed shows the songs/beats that you can give feedback to
 
-![feed.png](/imgs/feed.png)
+![feed.png](public/imgs/feed.png)
 ---
 Once one clicks on an individual post through the feed or on their own profile, they can take a look at the given feedback, amount of likes, and even delete the post if it was created by them
 
-![post.png](/imgs/post.png)
+![post.png](public/imgs/post.png)
 
 
 # Install
